@@ -162,7 +162,6 @@ body._lock{
 	z-index: 5;
 	width: 70px;
 	height: 50px;
-  font-size: 1.1rem;
 }
 .header_logo img{
   max-width: 60px;
@@ -756,6 +755,14 @@ body._touch .menu_list > li._active .menu_arrow {
     }
     /* End four block start Second block*/
      /* Start contact block */
+     .wrapper_contact_block{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+
+     }
     .contact-block{
       min-height: 80vh;
       max-width: 100vw;
@@ -1237,7 +1244,8 @@ body._touch .menu_list > li._active .menu_arrow {
 .right-photo > img{
     max-width: 70%;
     margin-left: 10%;
-    border-radius: 100px;
+    border-radius: 10px;
+    padding-top: 20px;
 }
  .right-photo p{
     text-align: center;
@@ -1312,7 +1320,12 @@ body._touch .menu_list > li._active .menu_arrow {
 }
     .right-photo {
         align-self: center;  
+        min-width: 95%;
+        
 }
+ .right-photo img{
+      margin-bottom: 5px; 
+ }
     .right-photo p{
     text-align: center;
     
@@ -1572,9 +1585,71 @@ body._touch .menu_list > li._active .menu_arrow {
 }
 }
 
+
+
+ul.numbered-list {
+  counter-reset: li;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 10px;
+  
+  li {
+    position: relative;   
+    padding: 5px 0 5px 30px;
+    
+    &:before {
+      content: counter(li);
+      counter-increment: li;
+      height: 20px;
+      width: 20px;
+      border: 1px solid blue;
+      border-radius: 50%;
+      color: red;
+      text-align: center;
+      position: absolute;      
+      left: 0;
+      top: 4px;
+    }
+  }
+}
+
+/* About us start*/
+ol {
+    counter-reset:item; 
+    margin:0; 
+    padding-left:0; 
+}
+ol>li {
+    counter-increment:item; 
+    list-style:none inside; 
+    margin: 20px 0;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: left;
+     
+}
+ol>li:before {
+    content:counter(item) ;
+    margin-right: 20px;
+    padding: 8px;
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 65px;
+    background: #fe862c;
+    color: #fff;
+    text-align: center; 
+    font: 56px 'Lato', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    float: left;
+}
+/* About us end*/
+
 /*end guide_tour_example*/
 /*Start comment example*/
-
 
 
 
