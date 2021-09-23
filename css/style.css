@@ -167,7 +167,26 @@ body._lock{
   max-width: 60px;
   max-height: 50px;
 }
-
+.header_logo h2{
+  font-size: 2rem;
+ margin-top: 9px;
+}
+@media (max-width:  1100px){
+  .header_logo h2{
+  visibility: collapse;
+}}
+@media (max-width:  767px){
+  .header_logo h2{
+  font-size: 1.5rem;
+  margin-top: 9px;
+   visibility: visible;
+}}
+@media (max-width:  360px){
+  .header_logo h2{
+  font-size: 1.5rem;
+  margin-top: 9px;
+   visibility: collapse;
+}}
 .header_menu {
 }
 .menu {
@@ -386,7 +405,32 @@ body._touch .menu_list > li._active .menu_arrow {
 		color: #000;
 	}
 }
+#myBtn{
 
+  
+} @media (max-width:  767px){
+  
+#myBtn {
+  margin: auto;
+    border-width: 3px;
+    border-color: rgba(10, 10, 10, 0.692);
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #120701;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    max-width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.9;
+    height: 50px;
+    width: 160px;
+}}
 /* End Header start First block*/
 
 .containerFirstBlock {
@@ -549,7 +593,7 @@ body._touch .menu_list > li._active .menu_arrow {
       margin-bottom: 25px;
       line-height: 1.857;
       text-align: justify;
-      text-shadow: 3px -3px 3px rgba(114,114,114,0.37);
+     
 
 
 
@@ -627,6 +671,8 @@ body._touch .menu_list > li._active .menu_arrow {
       font-size: 16px;
       line-height: 1.375;
       color: #8d8d8d;
+      text-align: start;
+     
 
     }
     
@@ -645,7 +691,7 @@ body._touch .menu_list > li._active .menu_arrow {
     }
     .tour {
       width: 270px;
-      height: 320px;
+      height: 100%;
       box-shadow: 0 0 10px rgba(0,0,0,0.09);
       margin: 7px;
      
@@ -703,6 +749,10 @@ body._touch .menu_list > li._active .menu_arrow {
       font-size: 16px;
       line-height: 1.375;
       color: #8d8d8d;
+      text-align: justify;
+      max-width: 800px;
+      margin: auto;
+     
 
     }
     
@@ -720,7 +770,7 @@ body._touch .menu_list > li._active .menu_arrow {
     }
     .tour4 {
       width: 270px;
-      height: 320px;
+      height: 365px;
       box-shadow: 0 0 10px rgba(0,0,0,0.09);
       margin: 7px;
       overflow: hidden;
@@ -764,7 +814,8 @@ body._touch .menu_list > li._active .menu_arrow {
 
      }
     .contact-block{
-      min-height: 80vh;
+      margin-top: 10px;
+      min-height: 100vh;
       max-width: 100vw;
       display: flex;
       flex-direction: column;
@@ -1031,10 +1082,12 @@ body._touch .menu_list > li._active .menu_arrow {
       height: 100%;
       word-wrap: break-word;
       width: 230px;
-      
       margin: auto;
       
       
+    }
+    .about-tour_main p{
+      text-align: center;
     }
     .container-third-block{
       max-height: 100%;
@@ -1147,7 +1200,13 @@ body._touch .menu_list > li._active .menu_arrow {
 }
 .header-text p{
   font-size: 16px;
-  padding: 10px;
+  line-height: 1.375;
+  color: #8d8d8d;
+}
+.header-text p a{
+  font-size: 16px;
+  line-height: 1.375;
+  color: #454750;
 }
 
 .lviv_guide-tour {
@@ -1242,7 +1301,7 @@ body._touch .menu_list > li._active .menu_arrow {
   
 }
 .right-photo > img{
-    max-width: 70%;
+    max-width: 90%;
     margin-left: 10%;
     border-radius: 10px;
     padding-top: 20px;
@@ -1251,10 +1310,14 @@ body._touch .menu_list > li._active .menu_arrow {
     text-align: center;
     padding-top: 20px;
 }
+.right-photo h2{
+  visibility: collapse;
+}
 .left-text {
     align-self: baseline;
     max-width: 49%; 
-    max-height: 100vh;
+    
+    min-height: 100vh;
     line-height: normal;
     overflow: auto;
 
@@ -1324,11 +1387,20 @@ body._touch .menu_list > li._active .menu_arrow {
         
 }
  .right-photo img{
-      margin-bottom: 5px; 
+      margin-bottom: 5px;
+    
+      align-self: center;
+ }
+ .right-photo img:nth-child(3n){
+  
+   display: none;
  }
     .right-photo p{
     text-align: center;
     
+}
+.right-photo h2{
+  visibility: visible;
 }
     .left-text {
         align-self: center;
@@ -1351,6 +1423,9 @@ body._touch .menu_list > li._active .menu_arrow {
     border-radius: 45px;
    
   
+}
+.left-text h2{
+  visibility: collapse;
 }
 #more 
 {display: none;}
@@ -1450,7 +1525,7 @@ body._touch .menu_list > li._active .menu_arrow {
   padding: 5px;
 }
 .img_block2 {
-    max-width: 330px;
+    max-width: 350px;
     max-height: 480px;
     margin: auto;
     
@@ -1461,6 +1536,33 @@ body._touch .menu_list > li._active .menu_arrow {
   min-width: 350px;
   min-height: 240px;
   padding: 5px;
+}
+.about_guide_tour_details_flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px 0px 10px;
+ 
+}
+.about_guide_tour_details_wrapper{
+display: inline;
+max-width: 200px;
+min-width: 200px;
+
+}
+.about_guide_tour_details{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px 0px 10px;
+}
+.about_guide_tour_details>b{
+  padding-top: 15px;
+  text-transform: uppercase;
 }
 .about_guide_tour_example {
   padding: 0px 50px 20px 50px;
@@ -1514,15 +1616,22 @@ body._touch .menu_list > li._active .menu_arrow {
   .wrapper_guide_tour_example{
   width: 100%;
   flex-direction: column-reverse;
+
 }
+
 .photo_from_location_wrapper h2 {
   
-  visibility: collapse;
+  visibility: hidden;
   
 }
+
 .about_guide_tour_example {
   padding: 0px 50px 20px 50px;
   
+}
+#colaps_element{
+  visibility: visible;
+
 }
 
 .about_guide_tour_example h2{
@@ -1536,9 +1645,9 @@ body._touch .menu_list > li._active .menu_arrow {
 }
 @media (max-width: 767px){
   .img_block{
-    min-width: 97%;
+    min-width: 70%;
     max-width: 97%;
-    min-height: 97%;
+    min-height: 70%;
     max-height: 97%;
   
 }
@@ -1549,9 +1658,9 @@ body._touch .menu_list > li._active .menu_arrow {
     min-height: 250px;
 }
  .img_block2{
-    min-width: 97%;
+    min-width: 70%;
     max-width: 97%;
-    min-height: 97%;
+    min-height: 70%;
     max-height: 97%;
   
 }
@@ -1571,6 +1680,7 @@ body._touch .menu_list > li._active .menu_arrow {
   width: 100%;
   max-height: 100%;
 }
+
   .photo_from_location div:nth-child(4){
   display: block;
 
@@ -1650,7 +1760,39 @@ ol>li:before {
 
 /*end guide_tour_example*/
 /*Start comment example*/
-
+/* our_cooperetion start*/
+.coop_list ol {
+    counter-reset:item; 
+    margin:0; 
+    padding-left:0; 
+}
+.coop_list ol>li {
+    counter-increment:item; 
+    list-style:none inside; 
+    margin: 20px 0;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: left;
+     
+}
+.coop_list ol>li:before {
+    content:counter(item) ;
+    margin-right: 20px;
+    padding: 8px;
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 65px;
+    background: #00c711;
+    color: #fff;
+    text-align: center; 
+    font: 56px 'Lato', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    float: left;
+}
+/* our cooperation end*/
 
 
 
@@ -1664,3 +1806,155 @@ ol>li:before {
 
 
 /*End comment example*/
+/*Start photo Explore */
+/* картинка на странице */
+.minimized {
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+
+.minimized:hover {
+  border: 1px solid yellow;
+}
+
+/* увеличенная картинка */
+#magnify {
+  display: none;
+
+  /* position: absolute; upd: 24.10.2016 */
+  position: fixed;
+  max-width: 100vh;
+  height: auto;
+  z-index: 9999;
+}
+
+#magnify img {
+  width: 100%;
+  height: 100%;
+}
+
+/* затемняющий фон */
+#overlay {
+  display: none;
+
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+
+
+
+
+
+/*End photo Explore*/
+
+
+
+/* Style for tour page */
+
+hr{
+    border: 0; 
+    height: 0; /* Firefox... */ 
+    box-shadow: 0 0 10px 1px black;
+}
+
+.ul_list{
+    font-size: 1.3rem; 
+    line-height: 2; 
+    margin: auto;
+}
+ .ul_list>li{
+     list-style-type: circle;
+ }
+ .sub_title{
+      color: #04078a;
+     font-size: 1.4rem; 
+     font-style: italic; 
+     font-weight: 600; 
+     text-align: center;
+
+ }
+/* End Style for tour page */
+
+/* button join to us Приєднатися */
+#join{
+  margin: auto;
+    border-width: 3px;
+    border-color: rgba(10, 10, 10, 0.692);
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #120701;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    max-width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.9;
+    height: 50px;
+    width: 160px;
+  }
+   #myBtn-con{
+    margin: auto;
+    border-width: 3px;
+    border-color: rgba(10, 10, 10, 0.692);
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #120701;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    max-width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.9;
+    height: 50px;
+    width: 160px;
+  }
