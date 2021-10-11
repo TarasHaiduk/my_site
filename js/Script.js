@@ -58,3 +58,108 @@ $(function () {
 $(".btnJquery").on('click', function () {
     $(".jqueryHide").toggle();
 })
+
+
+
+
+/* Slider*/
+
+
+$(document).ready(function () {
+    $('.slider').slick({
+        infinite: true,
+        arrows: true,
+        dots: true,
+        adaptiveHeight: false,
+        slidesToShow: 3,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 3000,
+        centerMode: true,
+
+
+        responsive: [
+            {
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 2,
+                    autoplay: true,
+                    fade: false,
+
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: false,
+                    fade: true,
+
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: false,
+                    fade: true,
+                }
+            }
+        ]
+    });
+});
+
+$(document).ready(function () {
+    $('.slider_2').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: false,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 1700,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            }, {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+
+                }
+            }
+        ]
+    });
+});
+
+
+
+
+/* End Slider*/
