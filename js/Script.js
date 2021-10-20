@@ -129,9 +129,19 @@ $(document).ready(function () {
                     dots: true
                 }
             }, {
-                breakpoint: 1200,
+                breakpoint: 1500,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: true
@@ -159,7 +169,56 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.slider_3').slick({
+        infinite: true,
+        arrows: true,
+        dots: true,
+        adaptiveHeight: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        speed: 1000,
+        autoplaySpeed: 2000,
+        centerMode: false,
+        rows: 2,
 
+
+        responsive: [
+            {
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 2,
+                    autoplay: false,
+                    fade: false,
+                    rows: 2,
+
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: false,
+                    fade: true,
+                    rows: 5,
+                    arrows: false,
+
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: false,
+                    fade: true,
+                    rows: 5,
+                    arrows: false,
+                }
+            }
+        ]
+    });
+});
 
 
 /* End Slider*/

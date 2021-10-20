@@ -25,7 +25,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 html::-webkit-scrollbar {
   width: 10px;
@@ -61,7 +61,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 /*Main style*/
 body{
-   font-family: 'Lato', sans-serif;
+   font-family: 'Raleway', sans-serif;
+     background-color: #f7f7f7;
   
 }
 h1 {
@@ -435,6 +436,172 @@ body._touch .menu_list > li._active .menu_arrow {
 
 .containerFirstBlock {
    
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1rem;
+    min-height: 100vh;
+     padding-top: 70px;
+  
+  }
+  .firstBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/Rectangle.jpg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 1rem;
+    min-height: 100vh;
+
+     
+  }
+  .first_block_title h3{
+  text-align: center;
+  font-size: 16px;
+  color: rgb(141, 141, 141);
+  font-weight: bold;
+  line-height: 2.313;
+  -moz-transform: matrix( 0.99910850310638,0,0,1.00374223736226,0,0);
+  -webkit-transform: matrix( 0.99910850310638,0,0,1.00374223736226,0,0);
+  -ms-transform: matrix( 0.99910850310638,0,0,1.00374223736226,0,0);
+
+  }
+  .first_block_title h1{
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(26, 26, 27);
+  line-height: 1.423;
+  -moz-transform: matrix( 0.99910850310638,0,0,1.00374223736226,0,0);
+  -webkit-transform: matrix( 0.99910850310638,0,0,1.00374223736226,0,0);
+  -ms-transform: matrix( 0.99910850310638,0,0,1.00374223736226,0,0);
+  }
+  .first_block_title {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  .firstblock_bloks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100%;
+  }
+  .first_blocks_1{
+    text-align: center;
+    width: 300px;
+    height: 390px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+    @media (max-width:  767px){
+      .first_blocks_1{
+    width: 270px;
+    height: 315px; 
+     margin-bottom: 22px;
+  }
+  .first_blocks_1 img:nth-child(1){
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+}
+  .first_blocks_1 h3{
+  font-size: 18px;
+  color: rgb(75, 84, 250);
+  line-height: 2.056
+    }
+  .first_blocks_1 p{
+    
+  font-size: 16px;
+ 
+  color: rgb(26, 26, 27);
+  line-height: 1.375;
+  text-align: center;
+
+    }
+  
+  .first_blocks_1 img:nth-child(1){
+    border-radius: 50%;
+    margin: 10px;
+    max-width: 87px;
+    max-height:87px ;
+  }
+  .first_blocks_1 img:nth-child(4){
+    margin-top: 10px;
+    max-width: 87px;
+    max-height:87px ;
+  }
+
+    @media (max-width:  767px){
+      .first_blocks_3{
+    width: 270px;
+    height: 330px; 
+  }
+  .first_blocks_3:nth-child(1){
+    border-radius: 50%;
+    margin-top: 10px;
+    max-width: 87px;
+    max-height:87px ;
+  }
+  .first_blocks_3 p:nth-child(3){
+  color: #FFFFFF;
+  font-weight: 700;
+  }
+}
+  .first_block_img{
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15vh;
+      
+    }
+     @media (max-width:  1140px){
+        .first_block_img {
+          margin-bottom: 2vh;
+        }
+      .first_block_img h2{
+   color: #FFFFFF;
+   text-align: center;
+  }
+ 
+}
+
+  
+ 
+  .buttonServices2 {
+    
+    height: 70px;
+    width: 220px;
+    
+  }
+  .buttonServices2 a{
+    display: block;
+    text-align: center;
+    padding-top: 12%;
+    background-color: #00897b;
+    border-radius: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #120701;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 100%;
+  }
+
+
+/*
+
+.containerFirstBlock {
+   
     background-image: url(../img/brebeneskul.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -541,7 +708,7 @@ body._touch .menu_list > li._active .menu_arrow {
     height: 100%;
   }
   
-  
+  */
    /* End First block start Second block*/
     /* Start second block start Second block*/
     .container-second-block{
@@ -771,7 +938,7 @@ body._touch .menu_list > li._active .menu_arrow {
     .tour4 {
       width: 270px;
       height: 365px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.09);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
       margin: 7px;
       overflow: hidden;
      
@@ -793,7 +960,7 @@ body._touch .menu_list > li._active .menu_arrow {
       min-width: 270px;
       min-height: 181px;
     }
-    @media (max-width:  1206px){
+    @media (max-width:  767px){
       .about-tour_main4{
       
       }
@@ -879,6 +1046,7 @@ body._touch .menu_list > li._active .menu_arrow {
     /* start footer block */
     .footer {
       display: block;
+  
       position: static;
       left: 0;
       bottom: 0;
@@ -915,10 +1083,11 @@ body._touch .menu_list > li._active .menu_arrow {
 
     }
     .footer-bottom-flex{
-      display: flex;
+      display: flex;  
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
+      align-items: center;
       bottom: 0;
     }
     .fa-facebook-square{
@@ -1227,7 +1396,7 @@ body._touch .menu_list > li._active .menu_arrow {
   text-align: center;
   margin: 10px;
   min-width: 350px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   overflow: hidden;
   
 }
@@ -1900,7 +2069,7 @@ ol>li:before {
 hr{
     border: 0; 
     height: 0; /* Firefox... */ 
-    box-shadow: 0 0 10px 1px black;
+    box-shadow: 0 0 0.1px 0.5px rgb(0, 100, 167);
 }
 
 .ul_list{
@@ -1912,12 +2081,69 @@ hr{
      list-style-type: circle;
  }
  .sub_title{
-      color: #04078a;
-     font-size: 1.4rem; 
-     font-style: italic; 
-     font-weight: 600; 
-     text-align: center;
+    color: rgb(75, 84, 250);
+    font-size: 1.4rem; 
+    font-style: italic; 
+    font-weight: 600; 
+    text-align: center;
 
+ }
+ .price_flex{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  
+ }
+ .price_tour{
+   
+ }
+ .dont_price_tour{
+   
+ }
+  .sub_title_2{
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem; 
+    font-style: italic; 
+    font-weight: 600; 
+    text-align: center;
+
+ }.ul_list_2{
+    font-size: 1.3rem; 
+    line-height: 2; 
+    margin: auto;
+     ;
+}
+ .ul_list_2>li{
+     
+     padding-left: 20px;
+    position: relative;
+    margin: 10px;
+ }
+  .ul_list_2>li:before{
+    content: '✔';
+    position: absolute; top: 0; left: 0;
+    color: rgb(0, 230, 57);
+    
+ }
+ .ul_list_3{
+    font-size: 1.3rem; 
+    line-height: 2; 
+    margin: auto;
+     ;
+}
+ .ul_list_3>li{
+    
+     padding-left: 20px;
+    position: relative;
+    margin: 10px;
+ }
+  .ul_list_3>li:before{
+    content: "x";
+    position: absolute; top: 0; left: 0;
+    color: rgb(230, 0, 69);
+    
  }
 /* End Style for tour page */
 
@@ -2202,4 +2428,85 @@ width: 180px;
 
 
    
-   /* Slider_img for photo end */
+   /* Slider_Tour for photo end */
+
+
+   .slider_3 {
+  min-width: 0;
+	position: relative;
+	padding: 0px 60px;
+}
+
+@media (max-width:767px){
+	.slider_3 {
+		padding: 0px 40px;
+	}
+}
+
+.slider_3 .slick-arrow{
+	position: absolute;
+	top: 50%;
+	margin: -60px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.slider_3 .slick-arrow.slick-prev{
+	left: 0;
+	background: url('/img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+}
+.slider_3 .slick-arrow.slick-next{
+	right: 0;
+	background: url('/img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+}
+.slider_3 .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.slider_3 .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider_3 .slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+}
+.slider_3 .slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(154, 185, 214);
+	border-radius: 50%;
+}
+
+.slider_3 .slick-dots li.slick-active button{
+	background-color: transparent;
+	border: 1px solid rgb(34, 31, 31);
+}
+
+.slider__item {
+  transition: all 0.3s ease 0s;
+	padding: 0px 15px;
+  opacity: 1;
+  text-align: center;
+}
+.slider__item img {
+	max-width: 100%;
+}
+.slider__item span {
+
+  
+}
+.slider__item.slick-center{
+  opacity: 1;
+	
+}
+   /* Slider_tour end */
+   
+
+
+
+
+  
