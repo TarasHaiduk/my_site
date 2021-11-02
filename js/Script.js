@@ -222,3 +222,92 @@ $(document).ready(function () {
 
 
 /* End Slider*/
+
+/* Start MagnificPopup */
+jQuery(function ($) {
+    // ALL SLIDER CALL
+    sliderCall.photoGallery();
+    // Lightbox Triggers
+    lightboxTrigger();
+});
+
+var sliderCall = {
+    photoGallery: function () {
+        var slider = $(".gallery-slider");
+        slider.slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: false,
+            infinite: true,
+            responsive: [
+                {
+                    breakpoint: 1700,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                }
+            ]
+        });
+    }
+}
+
+function lightboxTrigger() {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'li a',
+        type: 'image',
+        fixedContentPos: true,
+        closeOnBgClick: true,
+        alignTop: false,
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        }
+    });
+}
+
+
+/* End MagnificPopup */
