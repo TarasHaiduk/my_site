@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <!-- <title>Responsive Drop-down Menu Bar</title> -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -15,6 +16,7 @@
     <script src="./js/Script.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -210,36 +212,35 @@
                     <div class="wrapper_guide_tour_example">
                         <div class="photo_from_location_wrapper">
                             <h2>На південну сторону Карпат</h2>
-                            <div class=" slider_2 ">
 
-                                <div class=" slider__item2 filter ">
+                            <div class="gallery-module ">
+                                <ul class="gallery-slider popup-gallery">
+                                    <li class="">
+                                        <a href="./img/Thermal_Sirava.webp">
+                                            <img src="./img/Thermal_Sirava.webp" alt="Термальний комплекс Шірява">
+                                            <p style="text-align: center; color: dimgrey;">Термальний комплекс Шірява
+                                            </p>
+                                        </a>
+                                    </li>
 
-                                    <img class="minimized" src="./img/Thermal_Sirava.webp" alt="Термальні води Шірява">
-                                    <div class="wrapper_img">
-                                        <p>Термальний комплекс Шірява</p>
-                                    </div>
-                                </div>
-                                <div class=" slider__item2  ">
-
-                                    <img class="minimized" src="./img/Spissky_Grad.jpg" alt="Спішський Град">
-                                    <div class="wrapper_img">
-                                        <p>Спішський Град</p>
-                                    </div>
-
-
-                                </div>
-                                <div class="slider__item2  ">
-                                    <img class="minimized" src="./img/Tatry_slovensko_1.jpg"
-                                        alt=" Високі Татри у Словаччині">
-                                    <div class="wrapper_img"></div>
-                                    <p>Високі Татри у Словаччині</p>
-
-                                </div>
+                                    <li class=" ">
+                                        <a href="./img/Spissky_Grad.jpg">
+                                            <img src="./img/Spissky_Grad.jpg" alt="Спішський Град">
+                                            <p style="text-align: center; color: dimgrey;">Спішський Град
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="./img/Tatry_slovensko_1.jpg">
+                                            <img src="./img/Tatry_slovensko_1.jpg" alt="Високі Татри у Словаччині">
+                                            <p style="text-align: center; color: dimgrey;">Високі Татри у Словаччині
+                                            </p>
+                                        </a>
+                                    </li>
 
 
+                                </ul>
                                 <script src="js/slick.min.js"></script>
-                                <!-- Подключаем файл скриптов -->
-
                             </div>
                         </div>
                         <br>
@@ -300,25 +301,34 @@
                                 </li>
 
                             </ul>
-                            <div class="slider_2">
-                                <div class="slider__item2 filter">
-                                    <img class="minimized" src="./img/nevytskyj.jpg" alt="Невицький Замок">
-                                    <p style="text-align: center; color: dimgrey;">Невицький замок
-                                    </p>
-                                </div>
-                                <div class="slider__item2 ">
-                                    <img class="minimized" src="./img/Uzhhorod_czech.jpg" alt="Чеський квартал Ужгород">
-                                    <p style="text-align: center; color: dimgrey;">Сакури в Ужгороді
-                                    </p>
-                                </div>
-                                <div class="slider__item2 ">
-                                    <img class="minimized" src="./img/Uzhhorod_naberezhna.jpg"
-                                        alt="Ужгородська Набережна">
-                                    <p style="text-align: center; color: dimgrey;">Липова Алея Ужгород
-                                    </p>
-                                </div>
-                                <script src="js/slick.min.js"></script>
+                            <div class="gallery-module ">
+                                <ul class="gallery-slider popup-gallery">
+                                    <li class="">
+                                        <a href="./img/nevytskyj.jpg">
+                                            <img src="./img/nevytskyj.jpg" alt="Невицький замок">
+                                            <p style="text-align: center; color: dimgrey;">Невицький замок
+                                            </p>
+                                        </a>
+                                    </li>
 
+                                    <li class=" ">
+                                        <a href="./img/Uzhhorod_czech.jpg">
+                                            <img src="./img/Uzhhorod_czech.jpg" alt="Сакури в Ужгороді">
+                                            <p style="text-align: center; color: dimgrey;">Сакури в Ужгороді
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="./img/Uzhhorod_naberezhna.jpg">
+                                            <img src="./img/Uzhhorod_naberezhna.jpg" alt="Липова Алея Ужгород">
+                                            <p style="text-align: center; color: dimgrey;">Липова Алея Ужгород
+                                            </p>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                                <script src="js/slick.min.js"></script>
                             </div>
 
                             <h4>День другий. </h4>
@@ -333,22 +343,34 @@
                                 <li>Замок Ясенов та містечко Гуменне</li>
                                 <li> SPA resort в Шіряві</li>
                             </ul>
-                            <div class="slider_2">
-                                <div class="slider__item2 filter">
-                                    <img class="minimized" src="./img/kosice.jpg" alt="Кошіце">
-                                    <p style="text-align: center; color: dimgrey;">собор св. Єлизавети в Кошіце
-                                    </p>
-                                </div>
-                                <div class="slider__item2 ">
-                                    <img class="minimized" src="./img/SPA_sirava.jpg" alt="SPA Шірява">
-                                    <p style="text-align: center; color: dimgrey;">SPA в Шіряві
-                                    </p>
-                                </div>
-                                <div class="slider__item2 ">
-                                    <img class="minimized" src="./img/jasenov_castle.jpg" alt="Замок Ясенов">
-                                    <p style="text-align: center; color: dimgrey;">Замок Ясенов
-                                    </p>
-                                </div>
+
+                            <div class="gallery-module ">
+                                <ul class="gallery-slider popup-gallery">
+                                    <li class="">
+                                        <a href="./img/kosice.jpg">
+                                            <img src="./img/kosice.jpg" alt="собор св. Єлизавети в Кошіце">
+                                            <p style="text-align: center; color: dimgrey;">собор св. Єлизавети в Кошіце
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                    <li class=" ">
+                                        <a href="./img/SPA_sirava.jpg">
+                                            <img src="./img/SPA_sirava.jpg" alt="SPA в Шіряві">
+                                            <p style="text-align: center; color: dimgrey;">SPA в Шіряві
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="./img/jasenov_castle.jpg">
+                                            <img src="./img/jasenov_castle.jpg" alt="Замок Ясенов">
+                                            <p style="text-align: center; color: dimgrey;">Замок Ясенов
+                                            </p>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
                                 <script src="js/slick.min.js"></script>
                             </div>
                             <h4>День Третій
@@ -369,24 +391,35 @@
                                 <li>Штрбске Озеро та Водоспад Скок</li>
                                 <li>Прекрасні краєвиди та фото</li>
                             </ul>
-                            <div class="slider_2">
-                                <div class="slider__item2 filter">
-                                    <img class="minimized" src="./img/skok.jpg" alt="Водоспад Скок">
-                                    <p style="text-align: center; color: dimgrey;">Водоспад Скок
-                                    </p>
-                                </div>
-                                <div class="slider__item2">
-                                    <img class="minimized" src="./img/Tatry-Bystre-Sedlo-2.jpg" alt="Високі Татри">
-                                    <p style="text-align: center; color: dimgrey;">Високі Татри
-                                    </p>
-                                </div>
-                                <div class="slider__item2">
-                                    <img class="minimized" src="./img/Tatry-Bystre-Sedlo.jpg" alt="Озеро у Татрах">
-                                    <p style="text-align: center; color: dimgrey;">Озеро у Високих Татрах
-                                    </p>
-                                </div>
-                                <script src="js/slick.min.js"></script>
 
+                            <div class="gallery-module ">
+                                <ul class="gallery-slider popup-gallery">
+                                    <li class="">
+                                        <a href="./img/skok.jpg">
+                                            <img src="./img/skok.jpg" alt="Водоспад Скок">
+                                            <p style="text-align: center; color: dimgrey;">Водоспад Скок
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                    <li class=" ">
+                                        <a href="./img/Tatry-Bystre-Sedlo-2.jpg">
+                                            <img src="./img/Tatry-Bystre-Sedlo-2.jpg" alt="Високі Татри">
+                                            <p style="text-align: center; color: dimgrey;">Високі Татри
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="./img/Tatry-Bystre-Sedlo.jpg">
+                                            <img src="./img/Tatry-Bystre-Sedlo.jpg" alt="Плесо над Скоком">
+                                            <p style="text-align: center; color: dimgrey;">Озеро у Високих Татрах
+                                            </p>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                                <script src="js/slick.min.js"></script>
                             </div>
                             <h4>День Четвертий
                             </h4>
@@ -403,22 +436,34 @@
                                 <li>Вечірня Екскурсія Мукачевом</li>
                                 <li>Зранку їдемо додому</li>
                             </ul>
-                            <div class="slider_2">
-                                <div class="slider__item2 filter">
-                                    <img class="minimized" src="./img/Mukachevo.jpg" alt="Мукачево">
-                                    <p style="text-align: center; color: dimgrey;">Мукачівська ратуша
-                                    </p>
-                                </div>
-                                <div class="slider__item2">
-                                    <img class="minimized" src="./img/palanok-2.jpg" alt="Замок Паланок">
-                                    <p style="text-align: center; color: dimgrey;">Замок Паланок
-                                    </p>
-                                </div>
-                                <div class="slider__item2">
-                                    <img class="minimized" src="./img/Serednje_basement.jpg" alt="Середнянські Підвали">
-                                    <p style="text-align: center; color: dimgrey;">Винні підвали у с. Середнє
-                                    </p>
-                                </div>
+
+                            <div class="gallery-module ">
+                                <ul class="gallery-slider popup-gallery">
+                                    <li class="">
+                                        <a href="./img/Mukachevo.jpg">
+                                            <img src="./img/Mukachevo.jpg" alt="Мукачівська ратуша">
+                                            <p style="text-align: center; color: dimgrey;">Мукачівська ратуша
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                    <li class=" ">
+                                        <a href="./img/palanok-2.jpg">
+                                            <img src="./img/palanok-2.jpg" alt="Замок Паланок">
+                                            <p style="text-align: center; color: dimgrey;">Замок Паланок
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="./img/Serednje_basement.jpg">
+                                            <img src="./img/Serednje_basement.jpg" alt="Винні підвали у с. Середнє">
+                                            <p style="text-align: center; color: dimgrey;">Винні підвали у с. Середнє
+                                            </p>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
                                 <script src="js/slick.min.js"></script>
                             </div>
                             <h4>День П’ятий.
@@ -435,22 +480,34 @@
                                 <li>Львів</li>
 
                             </ul>
-                            <div class="slider_2">
-                                <div class="slider__item2 filter">
-                                    <img class="minimized" src="./img/Shenborn.jpg" alt="Палац Шенборнів">
-                                    <p style="text-align: center; color: dimgrey;">Палац Шенборнів
-                                    </p>
-                                </div>
-                                <div class="slider__item2">
-                                    <img class="minimized" src="./img/Veretske.jpg" alt="Середньо-Верецький Перевал">
-                                    <p style="text-align: center; color: dimgrey;">Середньо-Верецький перевал
-                                    </p>
-                                </div>
-                                <div class="slider__item2">
-                                    <img class="minimized" src="./img/Lviv-2.jpg" alt="Львів">
-                                    <p style="text-align: center; color: dimgrey;">Вежа Корнякта у Львові
-                                    </p>
-                                </div>
+
+                            <div class="gallery-module ">
+                                <ul class="gallery-slider popup-gallery">
+                                    <li class="">
+                                        <a href="./img/Shenborn.jpg">
+                                            <img src="./img/Shenborn.jpg" alt="Палац Шенборнів">
+                                            <p style="text-align: center; color: dimgrey;">Палац Шенборнів
+                                            </p>
+                                        </a>
+                                    </li>
+
+                                    <li class=" ">
+                                        <a href="./img/Veretske.jpg">
+                                            <img src="./img/Veretske.jpg" alt="Середньо-Верецький перевал">
+                                            <p style="text-align: center; color: dimgrey;">Середньо-Верецький перевал
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class=" ">
+                                        <a href="./img/Lviv-2.jpg">
+                                            <img src="./img/Lviv-2.jpg" alt="Вежа Корнякта у Львові">
+                                            <p style="text-align: center; color: dimgrey;">Вежа Корнякта у Львові
+                                            </p>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
                                 <script src="js/slick.min.js"></script>
                             </div>
 
@@ -494,7 +551,7 @@
                                         <li>ВСІ екскурсії по програмі
                                         </li>
                                         <li> Робота гіда та керівника групи</li>
-                                        <li>Групова страховка</li>
+                                        <li>Групове страхування</li>
                                     </ul>
                                 </div>
                                 <div class="dont_price_tour">
