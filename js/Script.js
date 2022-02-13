@@ -82,7 +82,7 @@ $(document).ready(function () {
             {
                 breakpoint: 1500,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     autoplay: true,
                     fade: false,
 
@@ -311,3 +311,15 @@ function lightboxTrigger() {
 
 
 /* End MagnificPopup */
+
+
+
+
+
+/* dynamic element Start  */
+
+
+
+
+
+/* dynamic element End  */
